@@ -1,0 +1,1 @@
+The solution is to make it explicit that we are accessing the value through pointer. This does not change the result in the current example but can be the difference between accessing an element vs writing to an incorrect memory address in other scenarios.  int main() { int x = 10; int *ptr = &x; *ptr = 20; printf("%d", *ptr); return 0; }
